@@ -10,12 +10,12 @@
 <body <?php body_class(); ?>>
 
     <!-- grid guide -->
-    <section class="gridguide">
+    <!-- <section class="gridguide">
         <div class="visible-lg">lg / 1200 </div>
         <div class="visible-sm">sm / 992 </div>
         <div class="visible-md">md / 768</div>
         <div class="visible-xs">xs / &lt; 768 </div>
-    </section>
+    </section> -->
     <!-- Container fluid -->
     <div class="container">
 
