@@ -1,0 +1,71 @@
+// home
+// Beekeeper design studio
+// 21 Oct 2017
+
+%image_thumbnail {
+    border-radius: 2px;
+    box-shadow: 1px 1px 7px #ccc;
+    }
+
+// home.php (Gallery)
+.pages_container {
+    h3 {
+        margin-top: 0;
+        }
+    .blog_container {
+        .back-btn {
+            margin-bottom: 20px;
+            }
+        h3 {
+            // margin-top: 0;
+            margin-bottom: 30px;
+            }
+        .gender_container {
+            .page_item {
+                display: inline-block;
+                a {
+                    margin-left: 10px;
+                    }
+                } //.page_item
+            } //.gender_container
+        // page description
+        .description {
+            margin-bottom: 60px;
+            }
+        // thumbnail style
+        .wp-post-image {
+            @extend %image_thumbnail;
+            }
+        .meta_container {
+            font-size: 13px;
+            margin-bottom: 40px;
+            margin-top: 15px;
+            h4 {
+                font-size: 16px;
+                margin-bottom: 0;
+                }
+            p {
+                margin-top: 4px;
+                margin-bottom: 6px;
+            }
+            div.content p {
+                color: gray;
+                }
+            } //.meta_container
+        } //.blog_container
+    } //.pages_container
+.single_container {
+    // thumbnail style
+    .wp-post-image {
+        @extend %image_thumbnail;
+        }
+    .page-header {
+        margin-bottom: 10px;
+        // border: 1px solid gray;
+        }
+    .meta_container {
+        .content {
+            margin-bottom: 10px;
+            }
+        } //.meta_container
+    } //.single_container

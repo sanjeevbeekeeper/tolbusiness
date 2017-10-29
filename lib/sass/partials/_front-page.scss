@@ -1,0 +1,32 @@
+// front page
+// Beekeeper design studio
+// 21 Oct 2017
+
+// Banner image
+.banner_container {
+    .coverimg {
+        height: 300px; // if no height specified, you will not see the image
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 3px;
+        }
+    }
+
+// Home page container
+.homepage_container {
+    margin-top: 80px;
+    article.description {
+        margin-bottom: 30px;
+        }
+    article.leatherbag_container {
+        margin-top: 30px;
+        // border: 1px solid gray;
+        p {
+            color: dimgray;
+            font-size: 13px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+            }
+        } //.leatherbag_container
+    }

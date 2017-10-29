@@ -1,0 +1,23 @@
+// enquiry
+// Beekeeper design studio
+// 27 Oct 2017
+
+.enquiry_container {
+    margin-top: 40px;
+    .form-group {
+        overflow: hidden;
+        label {
+            margin-top: 6px;
+            text-align: right;
+        }
+        p {
+            margin-bottom: 0;
+        }
+    }
+    .wpcf7-response-output {
+        padding: 20px;
+    }
+    label {
+        font-weight: normal;
+        }
+    }

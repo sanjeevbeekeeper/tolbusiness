@@ -1,0 +1,21 @@
+// debug
+// Beekeeper design studio
+// 20 Oct 2017
+
+$colornames: red blue brown green purple magenta coral cyan ;
+
+@each $color in $colornames {
+    $i: index($colornames, $color);
+    .debug_#{$i} {
+        border: 1px solid $color;
+        }
+    }
+
+// grid guide
+.gridguide {
+    background-color: lightyellow;
+    display: inline-block;
+    padding: 5px;
+    position: fixed;
+    border: 1px solid lightgray;
+    }

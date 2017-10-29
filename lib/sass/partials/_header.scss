@@ -1,0 +1,57 @@
+// header
+// Beekeeper design studio
+// 21 Oct 2017
+
+// bootstrap hack
+header {
+    margin-top: 100px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 100px;
+    .brand_container {
+        img {
+            margin-top: -60px;
+            z-index: 10;
+            position: absolute;
+            @media screen and (max-width: 768px) {
+                position: static;
+                margin-left: 15px;
+                }
+            }
+        }
+    .navbar {
+        min-height: 30px;
+        margin-bottom: 0;
+        .navbar-collapse {
+            padding-right: 0px;
+            }
+        }
+    .navbar-default {
+        background-color: #fff;
+        border-color: #fff;
+        .navbar-nav {
+            & > .active > a {
+                color: black;
+                background-color: #fff;
+                } //.active
+            & > li > a  {
+                padding-top: 6px;
+                padding-bottom: 6px;
+                }
+            } //.navbar-nav
+        } //.navbar-default
+    .company_email {
+        margin-top: 20px;
+        padding-right: 15px;
+        float: right;
+        span {
+            color: #bc7800;
+            }
+        @media screen and (max-width: 768px) {
+            float: none;
+            padding-right: 0;
+            display: block;
+            text-align: center;
+            }
+        }
+    } //header

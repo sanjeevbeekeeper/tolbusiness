@@ -1,0 +1,19 @@
+// buttons
+// Beekeeper design studio
+// 27 Oct 2017
+
+.btn {
+    padding: 6px 20px;
+    border-radius: 2px;
+    }
+.btn-tol {
+    $tol: #495660;
+    color: #fff;
+    background-color: $tol;
+    border-color: darken($tol, 10%);
+    &:hover {
+        color: #fff;
+        background-color: lighten($tol, 10%);
+        border-color: $tol;
+        } // &:hover
+    } //.btn-tol

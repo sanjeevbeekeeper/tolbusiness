@@ -1,0 +1,30 @@
+// shame
+// Beekeeper design studio
+// 20 Oct 2017
+
+.brand_container {
+    @media screen and (max-width: 768px) {
+        display: block;
+        // margin-bottom: 80px;
+        text-align: center;
+        border: 1px solid #fff;
+       }
+    }
+
+.position_container {
+    position: relative;
+    height: 336px;
+    .meta_container {
+        position: absolute;
+        bottom: 0;
+        span {
+            color: gray;
+            }
+        p {
+            margin: 2px;
+            }
+        .btn {
+            margin-top: 10px;
+            }
+        }
+    }
