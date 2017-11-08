@@ -31,48 +31,22 @@
           {
         ?>
 
-        <div class="row">
-            <?php
+        <?php
             } // if($i % 3 == 0)
-                ?>
-
-            <div class="col-lg-4 col-md-4 col-sm-4 col-sm-offset-0 col-xs-8 col-xs-offset-2">
-
-                <!-- image -->
-                <!-- Featured Image -->
-                <?php the_post_thumbnail('medium'); ?>
-
-                <!-- <div class="image"></div> -->
-
-                <div class="meta_container">
-
-                    <!-- code -->
-                    <h4>
-                        <a href="<?php the_permalink(); ?>"> <?php the_title(); ?> </a>
-                    </h4>
-
-                    <!-- names -->
-                    <p>
-                        <?php
-                            foreach((get_the_category()) as $category) {
-                                echo $category->cat_name . ' ';
-                                }
-                            ?>
-                    </p>
-
-                    <div class="content">
-                        <!-- <?php the_content() ?> -->
-                    </div>
-                </div>
-
-            </div> <!-- // col -->
-
-        <!-- increment the loop BEFORE we test the variable -->
-        <?php $i++;
-            if($i != 0 && $i % 3 == 0)
-            {
             ?>
-        </div> <!--/.row-->
+
+        <div class="product_container">
+            <div class="row">
+
+                <?php get_template_part( 'get_template_part/products', 'page' ); ?>
+
+            <!-- increment the loop BEFORE we test the variable -->
+            <?php $i++;
+                if($i != 0 && $i % 3 == 0)
+                {
+                ?>
+            </div> <!--/.row-->
+        </div>
 
         <?php
             } // $i++;
