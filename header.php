@@ -4,7 +4,7 @@
         <meta charset="<?php bloginfo('charset'); ?>">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title><?php bloginfo('name'); wp_title(); ?></title>
-        <meta name="description" content="<?php bloginfo('description'); ?>">
+        <meta name="description" content="Engaged in Exporting an Exquisite Range of Genuine Leather Products"/>
         <?php wp_head(); ?>
     </head>
 <body <?php body_class(); ?>>
