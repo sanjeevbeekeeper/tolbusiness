@@ -6,7 +6,7 @@
 
     <article class="article">
         <h3 class="page-header">Quality control</h3>
-        <p>Before reaching to the hands of our clients, the product has to pass several levels of quality control tests. Our skilled quality testing team helps us to scrutinize the quality standards of each finished product. Besides this, our R &amp; D department helps to provide incomparable support for the product development and quality assurance.</p>
+        <p>Before reaching to the hands of our clients, the product has to pass several levels of Quality  tests. Our skilled quality testing team helps us to scrutinize the quality standards of each finished product. Besides this, our R &amp; D department helps to provide incomparable support for the product development and quality assurance.</p>
     </article>
 
     <!-- company profile -->
@@ -27,7 +27,7 @@
                 </tr>
                 <tr>
                     <th>Market Covered</th>
-                    <td>Worldwide</td>
+                    <td>Middle East, Europe, USA, and Singapore</td>
                 </tr>
             </tbody>
         </table>
