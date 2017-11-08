@@ -17,4 +17,20 @@ footer {
             list-style: none;
             }
         } //ul.menu
+    nav {
+        @media screen and (max-width: 768px) {
+            margin-bottom: 10px;
+            text-align: center;
+        }
+    }
+    .copyright {
+        text-align: right;
+        @media screen and (max-width: 768px) {
+            span {
+                display: block;
+            }
+            margin-top: 10px;
+            text-align: center;
+           }
+        } //.copyright
     } //footer
