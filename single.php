@@ -12,57 +12,61 @@
                             <div class="image_container"><?php the_post_thumbnail('large'); ?></div>
                         </div> <!-- //.col -->
                         <!-- Meta container -->
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-8 col-xs-offset-2">
                             <div class="position_container">
                                 <div class="meta_container">
-                                    <div class="back-btn">
-                                        <a href="<?php echo get_page_link( get_page_by_title( product )->ID ); ?>">Back to Gallery</a>
-                                    </div>
+                                    <!-- <div class="back-btn">
+
+                                    </div> -->
 
                                     <?php
                                         if ( have_posts() ) : while ( have_posts() ) : the_post();
                                         ?>
 
                                         <!-- code -->
-                                        <?php the_title('<h4 class="page-header">', '</h4>'); ?>
+                                        <h4 class="page-header text-left">
+                                            <?php the_title(); ?>
+                                            <small class="pull-right"><a href="<?php echo get_page_link( get_page_by_title( product )->ID ); ?>">Back to Gallery </a></small>
+                                        </h4>
 
                                         <!-- content -->
-                                        <div class="content" style="color: red;">
-                                            <!-- <?php the_content(); ?> -->
+                                        <div class="content text-left">
+                                            <?php the_content(); ?>
                                         </div>
 
-                                        <!-- product name -->
-                                        <p>
-                                            <span>Product type: </span>
-                                            <?php
-                                                foreach((get_the_category()) as $category) {
-                                                    echo $category->cat_name . ' ';
-                                                    }
-                                                ?>
-                                        </p>
-
-                                    <!-- material -->
-                                        <p>
-                                            <span>Material: </span>
-                                            <?php
-                                                $my_tags = get_the_tags();
-                                                if ( $my_tags ) {
-                                                    foreach ( $my_tags as $tag ) {
-                                                        $tag_names[] = $tag->name;
+                                        <div class="text-left">
+                                            <!-- product name -->
+                                            <p>
+                                                <span>Product type: </span>
+                                                <?php
+                                                    foreach((get_the_category()) as $category) {
+                                                        echo $category->cat_name . ' ';
                                                         }
-                                                    echo implode( ' / ', $tag_names );
-                                                    }
-                                                ?>
-                                        </p>
+                                                    ?>
+                                            </p>
 
+                                            <!-- material -->
+                                            <p>
+                                                <span>Material: </span>
+                                                <?php
+                                                    $my_tags = get_the_tags();
+                                                    if ( $my_tags ) {
+                                                        foreach ( $my_tags as $tag ) {
+                                                            $tag_names[] = $tag->name;
+                                                            }
+                                                        echo implode( ' / ', $tag_names );
+                                                        }
+                                                    ?>
+                                            </p>
 
-                                    <!-- color -->
-                                    <?php $color = get_post_meta($post->ID, '_productcolor_key', true); ?>
-                                    <p><span>Color:</span> <?php echo $color ?></p>
+                                            <!-- color -->
+                                            <?php $color = get_post_meta($post->ID, '_productcolor_key', true); ?>
+                                            <p><span>Color:</span> <?php echo $color ?></p>
 
-                                    <?php $size = get_post_meta($post->ID, '_productsize_key', true); ?>
-                                    <!-- size -->
-                                    <!-- <p><span>Size (inches): </span> <?php //echo $size ?></p> -->
+                                            <!-- product size -->
+                                            <?php $size = get_post_meta($post->ID, '_productsize_key', true); ?>
+                                            <p><span>Size (inches): </span> <?php echo $size ?></p>
+                                        </div>
                                     <!-- enquiry -->
                                     <!-- END LOOP -->
                                     <?php
@@ -72,7 +76,7 @@
                                         endif;
                                         ?>
                                     <a href="<?php echo get_page_link( get_page_by_title( 'enquiry' )->ID ); ?>" class="btn btn-default">Enquiry</a>
-                                </div>
+                                </div> <!-- //.meta-container -->
                             </div>
                         </div> <!-- //.col -->
 

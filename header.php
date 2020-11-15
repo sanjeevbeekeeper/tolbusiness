@@ -3,7 +3,7 @@
     <head>
         <meta charset="<?php bloginfo('charset'); ?>">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title><?php bloginfo('name'); wp_title(); ?></title>
+        <title><?php bloginfo('name'); wp_title(); ?> | Exporting an Exquisite Range of Genuine Leather Products </title>
         <meta name="description" content="Engaged in Exporting an Exquisite Range of Genuine Leather Products"/>
         <?php wp_head(); ?>
     </head>
@@ -26,7 +26,7 @@
                 <header>
 
                     <div class="brand_container">
-                        <img src="<?php bloginfo("template_directory"); ?>/resources/img/logo.jpg" alt="branding.jpg">
+                        <a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo("template_directory"); ?>/resources/img/logo.jpg" alt="branding.jpg"></a>
                     </div>
                     <nav class="navbar navbar-default" role="navigation">
                         <div class="container-fluid">

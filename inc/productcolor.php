@@ -11,7 +11,7 @@ function product_metadata() {
     function product_color_callback($post) {
         wp_nonce_field( 'productcolor_save_action', 'productcolor_nonce');
         $value = get_post_meta($post->ID, '_productcolor_key', true);
-        echo '<label for="product_color">Product color: </label>';
+        // echo '<label for="product_color">Product color: </label>';
         echo '<input type="text" id="product_color" name="product-color" value="'.esc_attr ($value).'" size="25" />';
         }
     add_action('add_meta_boxes', 'product_metadata');

@@ -14,7 +14,7 @@
             );
         // ===== BOOTSTRAP CSS
         wp_enqueue_style (
-            'bootstrap-style',
+            'fontawesome',
             get_stylesheet_directory_uri() . '/lib/vendors/bootstrap/bootstrap.min.css',
             array(),
             '3.3.4',

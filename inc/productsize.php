@@ -12,7 +12,7 @@ function product_size_metadata() {
         wp_nonce_field( 'productsize_save_action', 'productsize_nonce');
 
         $value = get_post_meta($post->ID, '_productsize_key', true);
-        echo '<label for="product_size">Product size: </label>';
+        // echo '<label for="product_size">Product size: </label>';
         echo '<input type="text" id="product_size" name="product-size" value="'.esc_attr ($value).'" size="25" />';
         }
     add_action('add_meta_boxes', 'product_size_metadata');
